@@ -1,0 +1,377 @@
+<style>
+#lesson60 .bg {
+	position:absolute;
+	top:80px; left:0px;
+	text-align:left;
+	width:1016px;
+	height:587px;
+	overflow:hidden;
+}
+#lesson60 .bg img.is_sue,
+#lesson60 .bg img.is_sam {
+	position:absolute;
+	left:0; top:-124px;
+}
+
+#lesson60 .avatar {
+	position:absolute;
+	top:121px; left:95px;
+}
+
+#lesson60 div.cards {
+	border-radius:20px;
+	background-color:#fff;
+	border:1px solid #6b6b6b;
+	padding:52px 30px;
+	margin-top:59px;
+	min-height:392px;
+}
+
+#lesson60 div.card {
+	display:inline-block;
+	position:relative;
+	width:163px;
+	vertical-align:top;
+	text-align:center;
+	cursor:pointer;
+	margin-left:89px;
+}
+
+#lesson60 div.card img.card {
+	width:118px;
+}
+
+#lesson60 div.card img.card-hover {
+	position:absolute;
+	display:none;
+	top:-6px; left:11px;
+	width:142px;
+}
+#lesson60 div.card:hover img.card-hover {
+	display:block;
+}
+
+#lesson60 div.card img.check,
+#lesson60 div.card img.partial {
+	position:absolute;
+	top:139px; left:79px;
+	width:37px; height:37px;
+}
+
+#lesson60 div.card span {
+	display:inline-block;
+	width:100%;
+	text-align:left;
+	padding-left:23px;
+}
+</style>
+
+<div class="lesson lesson60" id="lesson60">
+	<div class="lesson-body">
+		<h1 class="upper">HERAUSFORDERUNGEN</h1>
+		<h2 class="upper">&nbsp;</h2>
+
+		<div class="bg">
+			<img class="is_sue" src="static/lessons/0030-bg.png">
+			<img class="is_sam" src="static/lessons/0030-bg.png">
+			<div class="avatar is_sue"><img src="static/lessons/woman.png"></div>
+			<div class="avatar is_sam"><img src="static/lessons/man.png"></div>
+		</div>
+
+		<div class="cards-points">
+			<div class="c">Karten <span>&nbsp;</span></div>
+			<div class="p">Punkte <span>&nbsp;</span></div>
+		</div>
+					
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-8">
+				<div class="cards">
+					<p>
+						<span class="is_sam">John</span>
+						<span class="is_sue">Susan</span>
+						hat 2 Herausforderungen vorbereitet. In der ersten Herausforderung kannst Du Dein Wissen unter Beweis stellen, indem Du einige Multiple-Choice-Fragen beantwortest. 
+						<span class="is_sam">John</span>
+						<span class="is_sue">Susan</span>
+						hat auch ein Spiel vorbereitet, bei dem Du verschiedene Informationen in die richtige Klassifizierungsklasse verschieben musst.
+					</p>
+
+					<div class="card card61">
+						<img class="card-hover" src="static/lessons/card-exam-hover.png">
+						<img class="card" src="static/lessons/card-exam.png">
+						<img class="check" src="static/lessons/card-check.png">
+						<img class="partial" src="static/lessons/card-progress.png">
+						<span>Test</span>
+					</div>
+					<div class="card card62">
+						<img class="card-hover" src="static/lessons/card-exam-hover.png">
+						<img class="card" src="static/lessons/card-exam.png">
+						<img class="check" src="static/lessons/card-check.png">
+						<img class="partial" src="static/lessons/card-progress.png">
+						<span>Spiel</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bot-buttons">
+		<button class="b-xx-next right black" onclick="Lesson60.next(1)">WEITER</button>
+		<button class="b-xx-prev right black" onclick="Lesson60.back()">ZURÜCK</button>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<style>
+#lesson62 div.wrap-drag {
+	width:880px;
+	margin-left:25px;
+	overflow:hidden
+}
+
+#lesson62 .folders {
+	text-align:center;
+}
+
+#lesson62 .folders .fld {
+	display:inline-block;
+	margin:0 11px;
+	padding-bottom:10px;
+	font-size:1px;
+	line-height:1px;
+}
+
+#lesson62 .folders .fld img { width:147px; }
+#lesson62 .folders .fld span {
+	display:inline-block;
+	position:relative;
+	font-size:16px;
+	line-height:16px;
+	padding:3px 0;
+	text-align:center;
+	width:147px;
+	color:#fff;
+	margin-left:0px;
+	margin-top:2px;
+}
+#lesson62 .folders .fld span.txt {
+	color:#333;
+}
+
+#lesson62 .folders .fld span.c1 { background-color:#002c5f; /*#0094ff;*/ }
+#lesson62 .folders .fld span.c2 { background-color:rgb(136,193,228); /*#00ff21;*/ }
+#lesson62 .folders .fld span.c3 { background-color:rgb(173,163,152); /*#ffab25;*/ }
+#lesson62 .folders .fld span.c3p { background-color:rgb(131,131,131); }
+#lesson62 .folders .fld span.c4 { background-color:rgb(222,57,25); /*#ff000c;*/ }
+#lesson62 .folders .fld span.c5 { background-color:rgb(78,78,78); /*#ffab25;*/ }
+
+
+#lesson62 .list {
+	width:100%;
+}
+
+#lesson62 .list .list-wrap {
+	width:1640px; height:214px;
+	padding-bottom:10px;
+	height:210px;
+	line-height:165px;
+}
+
+#lesson62 .list .ui-widget-content {
+	position:relative;
+	display:inline-block;
+	border:0 none;
+	font-size:1px;
+	line-height:1px;
+	width:166px;
+	vertical-align:middle;
+	text-align:center;
+	margin:34px 20px 0 30px;
+}
+
+#lesson62 .list .ui-widget-content .tit
+{
+	position:absolute;
+	top:23px; left:10px;
+	width:144px;
+	line-height:22px;
+	font-size:12px;
+}
+</style>
+
+<div class="lesson lesson62" id="lesson62">
+	<div class="lesson-body">
+		<h1 class="upper">HERAUSFORDERUNG</h1>
+		<h2 class="upper">&nbsp;</h2>
+
+		<div class="cards-points">
+			<div class="c">Karten <span>&nbsp;</span></div>
+			<div class="p">Punkte <span>&nbsp;</span></div>
+		</div>
+
+		<p>
+			Ziehe bitte jeden Datentyp in den entsprechenden Ordner
+		</p>
+		
+		<div class="wrap-drag">
+			<div class="folders">
+				<div class="fld fld-c1">
+					<img src="static/lessons/folder256marine.png"><br>
+					<span class="c1">C1</span><br>
+					<span class="txt">Öffentlich</span>
+				</div>
+				<div class="fld fld-c2">
+					<img src="static/lessons/folder256horiz.png"><br>
+					<span class="c2">C2</span><br>
+					<span class="txt">Intern</span>
+				</div>
+				<div class="fld fld-c3">
+					<img src="static/lessons/folder256clay.png"><br>
+					<span class="c3">C3</span><br>
+					<span class="txt">Vertraulich</span>
+				</div>
+				<div class="fld fld-c4">
+					<img src="static/lessons/folder256red.png"><br>
+					<span class="c4">C4</span><br>
+					<span class="txt">Streng geheim</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+				
+			<div class="list">
+				<div class="list-wrap">
+					<div class="ui-widget-content item-c1 ans ans1" data-ok="0">
+						<img src="static/lessons/0062-inote.png">
+						<div class="tit">el1</div>
+					</div>
+					<div class="ui-widget-content item-c1 ans ans2" data-ok="0">
+						<img src="static/lessons/0062-inote.png">
+						<div class="tit">el2</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="bot-buttons">
+		<button class="b-xx-next right black" onclick="Lesson62.next(1)">WEITER</button>
+		<button class="b-xx-prev right black" onclick="Lesson62.back()">ZURÜCK</button>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<style>
+/*
+#lesson621 .row1 {
+	margin-top:24px;
+}*/
+
+#lesson621 .result-msg-ok {
+	color:#04a704;
+	font-weight:bold;
+}
+#lesson621 .result-msg-bad {
+	color:#de3919;
+	font-weight:bold;
+}
+
+#lesson621 .icons {
+}
+
+#lesson621 .icons .icon img {
+	width:30px; height:30px;
+	vertical-align:middle;
+}
+
+#lesson621 .row2 { margin-top:50px; }
+
+#lesson621 .row2 div.doc-cx {
+	display:inline-block;
+	position:relative;
+	width:160px;
+	margin:10px 10px;
+	vertical-align:top;
+}
+
+#lesson621 .row2 div.doc-cx div.img {
+	display:inline-block;
+	background-color:#444;
+	width:90px; height:90px;
+}
+#lesson621 .row2 div.doc-cx img {
+	width:90px; height:90px;
+}
+
+#lesson621 .row2 div.doc-cx span.cx {
+	display:inline-block;
+	position:absolute;
+	top:34px;
+	left:32px;
+	font-weight:bold;
+}
+
+#lesson621 .row2 div.doc-cx div.ico-res {
+	position:absolute;
+	top:67px; left:59px;
+}
+#lesson621 .row2 div.doc-cx div.ico-res img {
+	width:30px; height:30px;
+}
+
+#lesson621 .row2 div.doc-cx div.txt {
+	font-size:13px;
+}
+
+#lesson621 .row2 .fld-cx {
+	display:inline-block;
+	width:120px;
+	margin:10px 10px;
+	border-radius:20px;
+	background-color:#f1f1f1;
+}
+#lesson621 .row2 .fld-cx img {
+	width:100%;
+}
+</style>
+
+<div class="lesson lesson621" id="lesson621">
+	<div class="lesson-body">
+		<h1>HERAUSFORDERUNG 1</h1>
+
+		<div class="cards-points">
+			<div class="c">Karten <span>&nbsp;</span></div>
+			<div class="p">Punkte <span>&nbsp;</span></div>
+		</div>
+
+		<div class="row row1">
+			<div class="col-md-6">
+				<p class="result-msg-ok">Richtig!</p>
+				<p class="result-msg-bad">Nicht wirklich!</p>
+				<p>Hier siehst Du die korrekte Klassifizierung für jede Position. Vergleiche bitte, ob Deine Antwort richtig war:</p>
+			</div>
+			<div class="col-md-6">
+				<div class="icons">
+					<div class="icon">
+						<img src="static/lessons/card-check.png">
+						<span>Deine Antwort war richtig</span>
+					</div>
+					<div class="icon">
+						<img src="static/lessons/card-cross.png">
+						<span>Deine Antwort war falsch</span>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div class="row row2">
+			<div class="col-md-12">
+			</div>
+		</div>
+	</div>
+
+	<div class="bot-buttons">
+		<button class="b-xx-next right black" onclick="Lesson621.next(1)">WEITER</button>
+		<button class="b-xx-prev right black" onclick="Lesson621.back()">ZURÜCK</button>
+		<div class="clear"></div>
+	</div>
+</div>

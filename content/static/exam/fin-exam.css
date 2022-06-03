@@ -1,0 +1,128 @@
+﻿.fin-exam .chbox input[type=checkbox]
+{
+	position:absolute;
+	clip:rect(0,0,0,0);
+}
+
+.fin-exam .chbox input[type=checkbox] + label
+{
+	position:relative;
+	padding-left:23px;
+}
+
+.fin-exam .chbox input[type=checkbox] + label:before
+{
+	content:' ';
+	display:inline-block;
+
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:0; left:0;
+	bottom:0; margin:auto 0;
+	border: 1px solid #444;
+}
+
+.fin-exam .chbox input[type=checkbox]:checked + label:before,
+.fin-exam .chbox input[type=checkbox]:hover:checked + label:before,
+.fin-exam .chbox input[type=checkbox]:focus:checked + label:before
+{
+	background-color:transparent;
+	background-position:center;
+	background-image:url(i_check12.png);
+	background-repeat:no-repeat;
+}
+
+.fin-exam .ch-label-red:before
+{
+	background-color:#f00 !important;
+	box-shadow:0 0 16px 4px #f00 !important;
+}
+
+.fin-exam .ch-label-green:before
+{
+	background-color:#0f0 !important;
+	box-shadow:0 0 16px 4px #0f0 !important;
+}
+
+.fin-exam td,
+.fin-exam .chbox input[type=checkbox] + label
+{
+	color:#444;
+	font-size:20px;
+	line-height:29px;
+}
+
+.fin-exam td.title
+{
+	font-size:29px;
+	line-height:40px;
+	border-bottom: 3px solid #00494a;
+}
+.fin-exam td.title span { font-size:25px; }
+
+.fin-exam td.text
+{
+	padding:18px 30px 18px 0;
+	width:775px;
+	line-height:29px;
+}
+
+.fin-exam td.chbox { padding:3px 10px; text-align:center; }
+.fin-exam .chboxgreen { background-color:#b6edf3; }
+.fin-exam .chboxred { background-color:#c3eaef; display:none; }
+.fin-exam td.tiny
+{
+	padding-top:12px;
+	font-size:16px;
+	text-align:center;
+	color:#000;
+	display:none;
+}
+
+.fin-exam tr.dotted td { border-bottom: 1px dotted #d8d8d8; }
+.fin-exam tr.dotted td.chboxred { border-bottom-color:#e09896; }
+.fin-exam tr.dotted td.chboxgreen { border-bottom-color:#a1d6bc; }
+
+.fin-exam button.b-show-res { margin-right:16px; }
+
+
+
+.fin-exam .radio input[type=radio]
+{
+	position:absolute;
+	clip:rect(0,0,0,0);
+}
+
+.fin-exam .radio input[type=radio] + label
+{
+	position:relative;
+	padding-left:23px;
+
+	color:#444;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.fin-exam .radio input[type=radio] + label:before
+{
+	content:' ';
+	display:inline-block;
+
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:0; left:0;
+	bottom:0; margin:auto 0;
+	border: 1px solid #444;
+}
+
+.fin-exam .radio input[type=radio]:checked + label:before,
+.fin-exam .radio input[type=radio]:hover:checked + label:before,
+.fin-exam .radio input[type=radio]:focus:checked + label:before
+{
+	background-color:transparent;
+	background-position:center;
+	background-image:url(i_check12.png);
+	background-repeat:no-repeat;
+}

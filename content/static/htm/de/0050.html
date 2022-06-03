@@ -1,0 +1,830 @@
+<style>
+    #lesson50 .lesson-body .cards-points {
+        top: 68px;
+    }
+
+    #lesson50 .bg {
+        position: absolute;
+        top: 118px;
+        left: 0px;
+        text-align: left;
+        width: 1016px;
+        height: 548px;
+        overflow: hidden;
+    }
+    #lesson50 .bg img.is_sue,
+    #lesson50 .bg img.is_sam,
+	#lesson50 .bg img.is_arW,
+    #lesson50 .bg img.is_arM,
+	#lesson50 .bg img.is_inW,
+    #lesson50 .bg img.is_inM,
+	#lesson50 .bg img.is_afW,
+    #lesson50 .bg img.is_afM,
+	#lesson50 .bg img.is_asW,
+    #lesson50 .bg img.is_afM	
+	{
+        position: absolute;
+        left: 0;
+        top: -124px;
+    }
+
+    #lesson50 .avatar {
+        position: absolute;
+        top: 121px;
+        left: 95px;
+    }
+
+    #lesson50 div.cards {
+        border-radius: 20px;
+        background-color: #fff;
+        border: 1px solid #6b6b6b;
+        padding: 52px 30px;
+        margin-top: 100px;
+        min-height: 392px;
+    }
+
+    #lesson50 div.card {
+        display: inline-block;
+        position: relative;
+        width: 163px;
+        vertical-align: top;
+        text-align: center;
+        cursor: pointer;
+        margin-left: 22px;
+    }
+
+    #lesson50 div.card img.card {
+        width: 118px;
+    }
+
+    #lesson50 div.card img.card-hover {
+        position: absolute;
+        display: none;
+        top: -6px;
+        left: 11px;
+        width: 142px;
+    }
+    #lesson50 div.card:hover img.card-hover {
+        display: block;
+    }
+
+    #lesson50 div.card img.check,
+    #lesson50 div.card img.partial {
+        position: absolute;
+        top: 139px;
+        left: 79px;
+        width: 37px;
+        height: 37px;
+    }
+
+    #lesson50 div.card span {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        padding-left: 23px;
+    }
+</style>
+
+<div class="lesson lesson50" id="lesson50">
+    <div class="lesson-body">
+        <h1 class="upper">PROTECT DATA AND UNDERSTAND DATA CLASSIFICATION</h1>
+        <h2 class="upper">&nbsp;</h2>
+
+        <div class="bg">
+            <img class="is_sue" src="static/lessons/0030-bg.png" />
+            <img class="is_sam" src="static/lessons/0030-bg.png" />
+			<div class="avatar ava-name is_sue"><img src="static/lessons/woman-side.png"></div>
+			<div class="avatar ava-name is_sam"><img src="static/lessons/man-side.png"></div>
+			<div class="avatar ava-name is_arW"><img src="static/lessons/woman-arab-side.png"></div>
+			<div class="avatar ava-name is_arM"><img src="static/lessons/man-arab-side.png"></div>
+			<div class="avatar ava-name is_inW"><img src="static/lessons/woman-in-side.png"></div>
+			<div class="avatar ava-name is_inM"><img src="static/lessons/man-in-side.png"></div>
+			<div class="avatar ava-name is_afW"><img src="static/lessons/woman-af-side.png"></div>
+			<div class="avatar ava-name is_afM"><img src="static/lessons/man-af-side.png"></div>
+			<div class="avatar ava-name is_asW"><img src="static/lessons/woman-as-side.png"></div>
+			<div class="avatar ava-name is_asM"><img src="static/lessons/man-as-side.png"></div>
+        </div>
+
+        <div class="cards-points">
+            <div class="c">Cards <span>&nbsp;</span></div>
+            <div class="p">Points <span>&nbsp;</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-8">
+                <div class="cards">
+                    <p>
+                        Click on a card to learn more about the topic:
+                    </p>
+
+                    <div class="card card51">
+                        <img class="card-hover" src="static/lessons/card0-hover.png" />
+                        <img class="card" src="static/lessons/card0.png" />
+                        <img class="check" src="static/lessons/card-check.png" />
+                        <img class="partial" src="static/lessons/card-progress.png" />
+                        <span>Accessing and processing data</span>
+                    </div>
+                    <div class="card card52">
+                        <img class="card-hover" src="static/lessons/card0-hover.png" />
+                        <img class="card" src="static/lessons/card0.png" />
+                        <img class="check" src="static/lessons/card-check.png" />
+                        <img class="partial" src="static/lessons/card-progress.png" />
+                        <span>Data classification</span>
+                    </div>
+                    <div class="card card53">
+                        <img class="card-hover" src="static/lessons/card0-hover.png" />
+                        <img class="card" src="static/lessons/card0.png" />
+                        <img class="check" src="static/lessons/card-check.png" />
+                        <img class="partial" src="static/lessons/card-progress.png" />
+                        <span>Protect Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bot-buttons">
+        <button class="b-xx-next right black" onclick="Lesson50.next(1)">NEXT</button>
+        <button class="b-xx-prev right black" onclick="Lesson50.back()">BACK</button>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<style>
+    #lesson51 .infoico {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 22px;
+        cursor: pointer;
+    }
+
+    #lesson51 .infoico .d-img {
+        position: relative;
+        display: inline-block;
+       /* width: 93px;*/
+       width:140px;
+        height:117px;
+        
+    }
+
+    #lesson51 .infoico .d-img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /*width: 93px;*/
+       width: 140px;
+    }
+    #lesson51 .infoico .d-img img.ico-hover {
+        opacity: 0;
+    }
+
+    #lesson51 .infoico span {
+        display: inline-block;
+    }
+
+    #lesson51 .infoico:hover span {
+        color: #de3919;
+        font-weight: bold;
+    }
+    #lesson51 .infoico .infoico_1 .d-img .ico-blink {
+        display: none;
+    }
+    #lesson51 .infoico:hover .d-img img.ico-hover {
+        opacity: 1;
+    }
+    .blink {
+        animation: blinker 1.2s steps(2) infinite;
+    }
+    @keyframes blinker {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+<div class="lesson lesson51" id="lesson51">
+    <div class="lesson-body">
+        <h1>ACCESSING AND PROCESSING DATA</h1>
+        <h2>&nbsp;</h2>
+
+        <div class="cards-points">
+            <div class="c">Cards <span>&nbsp;</span></div>
+            <div class="p">Points <span>&nbsp;</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    When classifying data, you need to define the roles of people who can access and process the data. In this context one speaks of Information owner and Information processor.
+                </p>
+                <p>
+                    Please click on the according symbol to learn more.
+                </p>
+                <p>&nbsp;</p>
+            </div>
+            <div class="clear"></div>
+
+            <div class="col-md-3 col-left">
+                <div class="infoico infoico_1">
+                    <div class="d-img" style="left: -10px;">
+                        <img class="ico-blink blink" src="static/lessons/0051-ico-hover2.png" />
+                        <img class="ico-hover" src="static/lessons/0051-ico-hover2.png" />
+                        <img class="ico" src="static/lessons/0051-ico2.png" />
+                    </div>
+                    <span>Information owner</span>
+                </div>
+                <div class="infoico infoico_2">
+                    <div class="d-img" style="left: 2px;">
+                        <img class="ico-blink blink" src="static/lessons/0051-ico-hover1.png" />
+                        <img class="ico-hover" src="static/lessons/0051-ico-hover1.png" />
+                        <img class="ico" src="static/lessons/0051-ico1.png" />
+                    </div>
+                    <span>Information processor</span>
+                </div>
+            </div>
+            <div class="col-md-9 col-folders">
+                <div class="infobox infobox_xx">
+                    <h3 class="info_xx info_1">Information owner</h3>
+                    <p class="info_xx info_1">
+                        All employees who create information in their assigned area are responsible for compliance with information security within their scope of responsibility as information owners. As part of this responsibility, they
+                        are required to monitor and implement appropriate measures to protect the information they create.
+                    </p>
+                    <p class="info_xx info_1">The information owner is responsible for the following tasks:</p>
+                    <ul class="info_xx info_1">
+                        <li>Granting access authorizations for information</li>
+                        <li>Define availability requirements</li>
+                        <li>Implementing content changes</li>
+                        <li>Informing the entitled group of persons about protective measures</li>
+                    </ul>
+
+                    <h3 class="info_xx info_2">Information processor</h3>
+                    <p class="info_xx info_2">
+                        The information processor acts on behalf of the owner of the information in order to process information in daily operations or to pass it on in the necessary context. In the case of incoming information, he/she is
+                        the first information processor to determine the classification according to defined instructions of the information owner or to mark the information accordingly.
+                    </p>
+                    <p class="info_xx info_2">
+                        Deviations from valid instructions must be coordinated with the information owner.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot-buttons">
+        <button class="b-xx-next right red" onclick="Lesson51.next(1)">NEXT</button>
+        <button class="b-xx-prev right red" onclick="Lesson51.back()">BACK</button>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<style>
+    #lesson52 .bg {
+        width: 600px;
+        height: 440px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    #lesson52 .bg img {
+        margin-top: -75px;
+    }
+
+    #lesson52 .col-md-4 {
+        padding-top: 6px;
+    }
+
+    #lesson52 .bubble3.bub4folders {
+        position: absolute;
+        top: 138px;
+        left: 222px;
+        font-size: 1px;
+        line-height: 1px;
+        border: 2px solid #cacaca;
+    }
+    #lesson52 div.bubble3:after {
+        left: 48px;
+        background-image: url(static/img/bubble3-arr.png);
+    }
+
+    #lesson52 .bub4folders .fld {
+        display: inline-block;
+        margin: 0 4px;
+    }
+    #lesson52 .bub4folders .fld img {
+        width: 50px;
+    }
+    #lesson52 .bub4folders .fld span {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 3px 0;
+        text-align: center;
+        width: 50px;
+        color: #fff;
+        margin-top: 6px;
+    }
+
+    #lesson52 .bub4folders .fld span.c1 {
+        background-color: #002c5f;
+    }
+    #lesson52 .bub4folders .fld span.c2 {
+        background-color: rgb(136, 193, 228);
+    }
+    #lesson52 .bub4folders .fld span.c3 {
+        background-color: rgb(173, 163, 152);
+    }
+    #lesson52 .bub4folders .fld span.c4 {
+        background-color: rgb(222, 57, 25);
+    }
+</style>
+
+<div class="lesson lesson52" id="lesson52">
+    <div class="lesson-body">
+        <h1 class="upper">INTRODUCTION: DATA CLASSIFICATION</h1>
+        <h2 class="upper">&nbsp;</h2>
+
+        <div class="cards-points">
+            <div class="c">Cards <span>&nbsp;</span></div>
+            <div class="p">Points <span>&nbsp;</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="bg">
+                    <img src="static/lessons/0052-bg-sam.png" class="is_sam" />
+                    <img src="static/lessons/0052-bg-sue.png" class="is_sue" />
+                </div>
+            </div>
+            <div class="col-md-4 txtleft">
+                <p>
+                    <span class="is_sam">John</span>
+                    <span class="is_sue">Susan</span>
+                    explains that the basic prerequisite for the correct and safe handling of data and information is their correct classification.
+                </p>
+                <p>
+                    The purpose of classifying data in such a way is to limit access to it to a specific group of people and to protect sensitive information from unauthorised access. In principle, the confidentiality class assigned to the
+                    information applies indefinitely.
+                </p>
+                <p>
+                    Many companies use three risk classifications for sensitive data:
+                </p>
+                <ul>
+                    <li>public,</li>
+                    <li>internal,</li>
+                    <li>confidential</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bubble3 bub4folders">
+            <div class="fld">
+                <img src="static/lessons/folder256marine.png" /><br />
+                <span class="c1">C1</span>
+            </div>
+            <div class="fld">
+                <img src="static/lessons/folder256horiz.png" /><br />
+                <span class="c2">C2</span>
+            </div>
+            <div class="fld">
+                <img src="static/lessons/folder256clay.png" /><br />
+                <span class="c3">C3</span>
+            </div>
+            <div class="fld">
+                <img src="static/lessons/folder256red.png" /><br />
+                <span class="c4">C4</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot-buttons">
+        <button class="b-xx-next right black" onclick="Lesson52.next(1)">NEXT</button>
+        <button class="b-xx-prev right black" onclick="Lesson52.back()">BACK</button>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<style>
+    #lesson521 .row {
+        margin-top: 20px;
+    }
+
+    #lesson521 .col-folders {
+        margin-top: -10px;
+    }
+
+    #lesson521 .folders .fld {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+
+    #lesson521 .folders .fld img {
+        width: 56px;
+    }
+    #lesson521 .folders .fld span {
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 3px 0;
+        text-align: center;
+        width: 56px;
+        color: #fff;
+        /*margin-left:3px;*/
+    }
+
+    #lesson521 .folders .fld:hover span:after {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #de3919;
+    }
+
+    #lesson521 .folders .fld span.c1 {
+        background-color: #002c5f; /*#0094ff;*/
+    }
+    #lesson521 .folders .fld span.c2 {
+        background-color: rgb(136, 193, 228); /*#00ff21;*/
+    }
+    #lesson521 .folders .fld span.c3 {
+        background-color: rgb(173, 163, 152); /*#ffab25;*/
+    }
+    #lesson521 .folders .fld span.c4 {
+        background-color: rgb(222, 57, 25); /*#ff000c;*/
+    }
+
+    #lesson521 .infobox_xx {
+        padding-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    #lesson521 .infobox_xx p,
+    #lesson521 .infobox_xx ul li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+@-webkit-keyframes blink {
+	from{
+	opacity: .5;
+	box-shadow:none;
+	}
+	to{
+	opacity: 1;
+	box-shadow:0 0 20px #FF7D00;
+	}  
+}
+
+#lesson521 .folders .fld .blink {
+    -webkit-animation: blink .5s steps(2) infinite alternate;
+    -moz-animation: blink .5s steps(2) infinite alternate;
+    animation: blink .5s steps(2) infinite alternate;
+}
+</style>
+
+<div class="lesson lesson521" id="lesson521">
+    <div class="lesson-body">
+        <h1>DATA CLASSIFICATION</h1>
+        <h2>&nbsp;</h2>
+
+        <div class="cards-points">
+            <div class="c">Cards <span>&nbsp;</span></div>
+            <div class="p">Points <span>&nbsp;</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-left">
+                <p>
+									<span class="is_sam ava-name">John</span><span class="is_sue ava-name">Susan</span>
+						<span class="is_arM ava-name">هاشم</span><span class="is_arW ava-name">ماحي</span>
+						<span class="is_inM ava-name">Kumar</span><span class="is_inW ava-name">Divya</span>
+						<span class="is_afM ava-name">Darnell</span><span class="is_afW ava-name">Shanice</span>
+						<span class="is_asM ava-name">Chen</span><span class="is_asW ava-name">Choi</span> 
+                    emphasizes that ALL information must be consistently classified. This ensures that the need for protection is identified and appropriate measures can be taken.
+                </p>
+                <p>
+                    <span class="is_sue">Susan gives her</span>
+                    <span class="is_sam">John gives him</span>
+                    a short overview of the classification classes (click on it to learn more).
+                </p>
+            </div>
+            <div class="col-md-8 col-folders">
+                <div class="folders">
+                    <div class="fld fld1">
+                       
+                        <img class="blink" src="static/lessons/folder256marine.png" /><br />
+
+                        <span class="c1">C1</span>
+                    </div>
+                    <div class="fld fld2">
+                       
+                         <img class="blink" src="static/lessons/folder256horiz.png" /><br />
+
+                        <span class="c2">C2</span>
+                    </div>
+                    <div class="fld fld3">
+                        
+                         <img class="blink" src="static/lessons/folder256clay.png" /><br />
+                        <span class="c3">C3</span>
+                    </div>
+                    <div class="fld fld4">
+                       
+                         <img class="blink" src="static/lessons/folder256red.png" /><br />
+                        <span class="c4">C4</span>
+                    </div>
+                </div>
+
+                <div style="min-height: 362px;">
+                    <div class="infobox infobox_xx" style="min-height: 100px;">
+                        <h3 class="info_xx info_c1">C1 - Public</h3>
+                        <p class="info_xx info_c1">
+                            Documents classified as public: Information classified as publicly available is data that is either already generally available or intended for distribution outside an organization. It can be circulated without
+                            risk. Good examples include information intended for public use, such as press releases, job vacancies and, sales brochures.
+                        </p>
+
+                        <h3 class="info_xx info_c2">C2 – Internal</h3>
+                        <p class="info_xx info_c2">
+                            Documents classified as "internal": This classification applies to all information that is used in business processes. Its unauthorized distribution, alteration, or damage does not result in significant damage to
+                            the involved company, its customers, employees, or partners.
+                        </p>
+                        <p class="info_xx info_c2">
+                            Examples are all documents and data that are routinely used within a company, such as internal guidelines or telephone lists.
+                        </p>
+
+                        <h3 class="info_xx info_c3">C3 – Confidential</h3>
+                        <p class="info_xx info_c3">
+                            Documents classified as confidential: When information is classified as confidential, its unintentional disclosure, alteration, or damage usually results in serious harm to a company, its customers, employees, or
+                            partners.
+                        </p>
+                        <p class="info_xx info_c3">
+                            Confidential information includes, but is not limited to, intellectual property, contract negotiations, personal and health data, financial information, and account information of customers and employees.
+                        </p>
+
+                        <h3 class="info_xx info_c4">C4 – Secret</h3>
+                        <p class="info_xx info_c4">
+                            Documents classified as secret: In some organizations, there is a further level of information classification known as "secret" or "strictly confidential." It refers to any data whose unauthorized disclosure,
+                            alteration, or damage could result in devastating harm to an organization.
+                        </p>
+                        <p class="info_xx info_c4">
+                            For healthcare companies, this may include records of patients' mental health, sexually transmitted diseases, HIV testing, or drug abuse. Other examples include documents relating to mergers, strategic planning,
+                            or litigation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot-buttons">
+        <button class="b-xx-next right red" onclick="Lesson521.next(1)">NEXT</button>
+        <button class="b-xx-prev right red" onclick="Lesson521.back()">BACK</button>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<style>
+    #lesson53 .block1,
+    #lesson53 .block2 {
+        position: absolute;
+        top: 96px;
+        left: 15px;
+        width: 986px;
+    }
+
+    #lesson53 .block2 {
+        height: 555px;
+    }
+
+    #lesson53 .col-left img {
+        width: 100%;
+        margin-top: -32px;
+    }
+
+    #lesson53 table.t100 {
+        width: 99%;
+        border-collapse: collapse;
+    }
+
+    #lesson53 table.t100 td {
+        border: 1px solid #65b8c0;
+        padding: 8px;
+        vertical-align: middle;
+        text-transform: capitalize;
+    }
+
+    #lesson53 table.t100 td.green {
+        /*background-color:#ccffcc;*/
+        vertical-align: top;
+    }
+    #lesson53 table.t100 td.green h5,
+    #lesson53 table.t100 td.orange h5 {
+        text-transform: uppercase;
+        color: #000000;
+    }
+    #lesson53 table.t100 td.orange {
+        /*background-color:#ffcc99;*/
+        width: 30%;
+    }
+    #lesson53 table.t100 tr.gray td {
+        background-color: #e6e6e6;
+        width: 30%;
+    }
+
+    #lesson53 table.t100 th {
+        border: 0 none;
+        padding: 8px;
+        vertical-align: middle;
+        text-align: left;
+    }
+    #lesson53 table.t100 h5 {
+        font-weight: bold;
+        color: #65b8c0;
+        text-transform: uppercase;
+    }
+    #lesson53 table.t100 td.noborder {
+        border: 0 none;
+    }
+</style>
+
+<div class="lesson lesson53" id="lesson53">
+    <div class="lesson-body">
+        <h1>PROTECT DATA</h1>
+        <h2>&nbsp;</h2>
+
+        <div class="cards-points">
+            <div class="c">Cards <span>&nbsp;</span></div>
+            <div class="p">Points <span>&nbsp;</span></div>
+        </div>
+
+        <div class="block1">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Based on the data classification, data owners will have to decide whether their data needs to be encrypted, if sensitive data that is no longer required needs to be disposed in shredders or if documents needs to be
+                        locked away in cabinets.
+                    </p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="clear"></div>
+
+                <div class="col-md-6 col-left">
+                    <img src="static/lessons/0053.png" />
+                </div>
+                <div class="col-md-6 col-txt">
+                    <p>
+                       									<span class="is_sam ava-name">John</span><span class="is_sue ava-name">Susan</span>
+						<span class="is_arM ava-name">هاشم</span><span class="is_arW ava-name">ماحي</span>
+						<span class="is_inM ava-name">Kumar</span><span class="is_inW ava-name">Divya</span>
+						<span class="is_afM ava-name">Darnell</span><span class="is_afW ava-name">Shanice</span>
+						<span class="is_asM ava-name">Chen</span><span class="is_asW ava-name">Choi</span> 
+                        will first address the protection of e-mail communication. An e-mail is not a secure medium without special security measures. It is like a postcard that anyone can read.
+                        									<span class="is_sam ava-name">John</span><span class="is_sue ava-name">Susan</span>
+						<span class="is_arM ava-name">هاشم</span><span class="is_arW ava-name">ماحي</span>
+						<span class="is_inM ava-name">Kumar</span><span class="is_inW ava-name">Divya</span>
+						<span class="is_afM ava-name">Darnell</span><span class="is_afW ava-name">Shanice</span>
+						<span class="is_asM ava-name">Chen</span><span class="is_asW ava-name">Choi</span> 
+                        therefore explains that everyone must encrypt confidential information if they want to send it by e-mail.
+                    </p>
+                    <p>
+                        You must also always check the recipients carefully before sending an e-mail. The auto-complete function in particular can quickly cause an error and confidential documents can end up with the wrong recipient.
+                    </p>
+                    <p>
+                        On the following page
+                       									<span class="is_sam ava-name">John</span><span class="is_sue ava-name">Susan</span>
+						<span class="is_arM ava-name">هاشم</span><span class="is_arW ava-name">ماحي</span>
+						<span class="is_inM ava-name">Kumar</span><span class="is_inW ava-name">Divya</span>
+						<span class="is_afM ava-name">Darnell</span><span class="is_afW ava-name">Shanice</span>
+						<span class="is_asM ava-name">Chen</span><span class="is_asW ava-name">Choi</span> 
+                        will present further protective measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block2 block-scroll">
+            <table class="t100">
+                <tbody>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th colspan="2"><h5>Confidentiality level</h5></th>
+                    </tr>
+                    <tr>
+                        <td class="noborder"><h5>Information Location</h5></td>
+                        <td class="green">
+                            <h5>Public</h5>
+                            Examples: press releases, flyers, public parts of a website, public event
+                        </td>
+                        <td class="orange">
+                            <h5>Confidential</h5>
+                            Examples: personal data, travel and payroll accounting, research data, technical data (construction plans of high-security rooms, network plans)
+                        </td>
+                    </tr>
+                    <tr class="gray">
+                        <td>Storage on network drives with access protection or internal cloud systems</td>
+                        <td>unencrypted</td>
+                        <td>unencrypted</td>
+                    </tr>
+                    <tr>
+                        <td>Storage on external cloud systems</td>
+                        <td>unencrypted</td>
+                        <td>encrypted</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>Storage on mobile data media</td>
+                        <td>unencrypted</td>
+                        <td>encrypted</td>
+                    </tr>
+                    <tr>
+                        <td>Save to notebooks and local media</td>
+                        <td>unencrypted</td>
+                        <td>encrypted</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>Delivery by e-mail - internal</td>
+                        <td>unencrypted</td>
+                        <td>unencrypted, with reference to confidential information</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery by e-mail - external</td>
+                        <td>unencrypted</td>
+                        <td>encrypted, with reference to confidentiality</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>Destruction of documents in document shredders</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>electronic transmission of documents - internal</td>
+                        <td>Everyone</td>
+                        <td>to a previously defined group of persons or with the consent of the information owner</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>electronic transmission of documents - external</td>
+                        <td>Everyone</td>
+                        <td>to persons according to the principle &quot;knowledge only if necessary,&quot; otherwise with the consent of the information owner or data protection officer (for personal data)</td>
+                    </tr>
+                    <tr>
+                        <td>Distribution by mail</td>
+                        <td>No restriction</td>
+                        <td>sealed envelope or personal delivery</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>Distribution by fax</td>
+                        <td>No restriction</td>
+                        <td>Recipient expects the fax</td>
+                    </tr>
+                    <tr>
+                        <td>Retention of documents</td>
+                        <td>No restriction</td>
+                        <td>lockable cabinet</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>Printing documents</td>
+                        <td>No restriction</td>
+                        <td>local printer, network printer in the same room or direct pick-up at the printer</td>
+                    </tr>
+                    <tr>
+                        <td>Dealing with mobile devices</td>
+                        <td>No restriction</td>
+                        <td>store in encrypted form</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>screen lock</td>
+                        <td>No restriction</td>
+                        <td>automatic lock</td>
+                    </tr>
+                    <tr>
+                        <td>access control</td>
+                        <td>No restriction</td>
+                        <td>electronically controlled access</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>Remote access of support employees</td>
+                        <td>No restriction</td>
+                        <td>close confidential applications, permission by the user</td>
+                    </tr>
+                    <tr>
+                        <td>Disposal of data storage media</td>
+                        <td>No restriction</td>
+                        <td>secure deletion</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="bot-buttons">
+        <button class="b-xx-next right red" onclick="Lesson53.next(1)">NEXT</button>
+        <button class="b-xx-prev right red" onclick="Lesson53.back()">BACK</button>
+        <div class="clear"></div>
+    </div>
+</div>

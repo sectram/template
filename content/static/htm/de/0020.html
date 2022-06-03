@@ -1,0 +1,392 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">#lesson20 { display:none; }
+
+#lesson20 .lesson-body { padding: 67px; }
+
+#lesson20 .welcome {
+	position:relative;
+	padding-top:176px;
+	padding-left:132px;
+}
+
+#lesson20 .lesson-body h1 {
+	padding:17px 0 28px 0;
+}
+
+#lesson20 p {
+	line-height:28px;
+}
+
+#lesson20 img.it-logo {
+	display:block;
+	position:absolute;
+	top:210px; left:12px;
+	width:234px;
+}
+</style>
+<div class="lesson lesson20" id="lesson20">
+<div class="lesson-body">
+<h1 class="upper">WILLKOMMEN ZUM DATENKLASSIFIKATIONSTRAINING</h1>
+
+<h2></h2>
+
+<div class="row">
+<div class="col-md-8">
+<p>In dieser Schulung lernen Sie die Grundlagen für die Klassifizierung von Daten kennen. Die Schulung besteht <span style="color:#4E4E4E; text-decoration: underline;">aus Videos, Folien </span> und Herausforderungen. <span style="color:#4E4E4E; text-decoration: underline;">Kopfhörer oder Lautsprecher sind nur für die Videos erforderlich.</span></p>
+
+<p>Um diesen Kurs abzuschlie&szlig;en, ben&ouml;tigen Sie ungef&auml;hr 20 Minuten.</p>
+<img class="it-logo" src="static/img/it-logo.png" /></div>
+
+<div class="col-md-4">
+<div class="infobox">
+<h3>Information</h3>
+
+<p>Im &bdquo;Men&uuml;&ldquo; links oben k&ouml;nnen Sie direkt auf jede gew&uuml;nschte Seite zugreifen, solange diese aktiviert ist. Sie m&uuml;ssen zuerst den Kurs in der vorgegebenen Reihenfolge durchlaufen, um die Seiten im Men&uuml; zu aktivieren.</p>
+
+<p>Sie k&ouml;nnen den Kurs jederzeit unterbrechen, indem Sie oben rechts auf &bdquo;Home&quot; klicken. Ihr Fortschritt wird gespeichert.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bot-buttons"><button class="b-xx-next right" onclick="Lesson30.next(0)">WEITER</button><button class="b-xx-prev right" onclick="Lesson10.next(0)">ZUR&Uuml;CK</button>
+
+<div class="clear"></div>
+</div>
+</div>
+<style type="text/css">#lesson30 { display:none; }
+
+#lesson30 .lesson-body {
+	background-image:url(static/lessons/0030-bg.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+#lesson30 .avatar {
+	position:absolute;
+	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position:left top;
+	margin-left:0;
+}
+
+#lesson30 .avatar .ava-check {
+	position:absolute;
+}
+
+#lesson30 .man-sam,
+#lesson30 .woman-sue {
+	transition: width 0.8s, height 0.8s;
+}
+
+#lesson30 .man-sam {
+	top:321px; left:230px;
+	background-image:url(static/lessons/man-sam-3-v2.png);
+	background-size:cover;
+	width:161px; height:330px;
+}
+#lesson30 .man-sam .ava-check {
+	top:54px; right:132px;
+	padding:8px 32px 8px 10px;
+	background-color:#676767;
+	border-radius:10px;
+}
+#lesson30 .man-sam .ava-check:after {
+	display:block;
+	content:'';
+	position:absolute;
+	background-color:#676767;
+	background-image:url(static/lessons/avatar-check.png);
+	background-repeat:no-repeat;
+	background-position:0 -20px;
+	width:20px; height:20px;
+	top:9px; right:7px;
+}
+#lesson30 .man-sam.unselected .ava-check { right:113px; }
+#lesson30 .man-sam.selected .ava-check:after {
+	background-position:0 0;
+}
+
+#lesson30 .man-sam .ava-check .txt { color:#fff; }
+
+#lesson30 .man-sam.unselected {
+	background-position:-280px 0;
+	width:141px; height:292px;
+}
+
+#lesson30 .man-sam.unselected:hover {
+	background-position:-137px 0;
+}
+
+
+#lesson30 .woman-sue {
+	top:334px; left:603px;
+	background-image:url(static/lessons/woman-sue-3-v3.png);
+	background-size:cover;
+	width:111px; height:321px;
+}
+
+#lesson30 .woman-sue .ava-check {
+	top:40px; left:119px;
+	padding:8px 10px 8px 32px;
+	background-color:#676767;
+	border-radius:10px;
+	transition:left 0.8s;
+}
+#lesson30 .woman-sue.selected .ava-check {
+	transition:left 0.1s;
+}
+
+#lesson30 .woman-sue .ava-check:after {
+	display:block;
+	content:'';
+	position:absolute;
+	background-color:#676767;
+	background-image:url(static/lessons/avatar-check.png);
+	background-repeat:no-repeat;
+	background-position:0 -20px;
+	width:20px; height:20px;
+	top:9px; left:7px;
+}
+#lesson30 .woman-sue.unselected .ava-check { left:63px; }
+
+#lesson30 .woman-sue.selected .ava-check:after {
+	background-position:0 0;
+}
+
+#lesson30 .woman-sue .ava-check .txt { color:#fff; }
+
+#lesson30 .woman-sue.unselected {
+	background-position:-309px 0;
+	width:98px; height:273px;
+}
+
+#lesson30 .woman-sue.unselected:hover {
+	background-position:-175px 0;
+}
+
+#lesson30.lesson .lesson-body .infobox { position:absolute; }
+
+#lesson30.lesson .lesson-body .infobox1 {
+	top:108px; left:348px;
+	width:213px;
+}
+
+#lesson30.lesson .lesson-body .hover-man {
+	position:absolute;
+	top:28px; left:321px;
+	width:341px;
+}
+#lesson30.lesson .lesson-body .hover-woman {
+	position:absolute;
+	top:28px; left:321px;
+	width:341px;
+}
+</style>
+<div class="lesson lesson30" id="lesson30">
+<div class="lesson-body">
+<div class="avatar woman-sue">
+<div class="ava-check r">
+<div class="txt">SUSAN</div>
+</div>
+</div>
+
+<div class="avatar man-sam">
+<div class="ava-check l">
+<div class="txt">JOHN</div>
+</div>
+</div>
+
+<div class="infobox infobox1">
+<h3 class="info1">W&auml;hle deinen Avatar</h3>
+
+<h3 class="info2">Du wirst begleitet von <span class="info-man">John</span><span class="info-woman">Susan</span></h3>
+
+<p class="info1">Bitte w&auml;hle, wer dich durch den Kurs begleiten soll.</p>
+
+<p class="info2"><span class="info-man">John</span><span class="info-woman">Susan</span> wird dich durch diesen Kurs f&uuml;hren und dir Tipps zum Thema Phishing geben. Bestimmte Begriffe in diesem Kurs sind in <i>kursiv</i>. Wenn du den Mauszeiger dar&uuml;ber h&auml;lst, erh&auml;lst du weitere Informationen und Erl&auml;uterungen.</p>
+</div>
+</div>
+
+<div class="bot-buttons"><button class="b-xx-next right black" onclick="Lesson40.next(0)">WEITER</button><button class="b-xx-prev right black" onclick="Lesson20.next(0)">ZUR&Uuml;CK</button>
+
+<div class="clear"></div>
+</div>
+</div>
+<style type="text/css">#lesson40 {
+	display:none;
+}
+
+#lesson40 .lesson-body {
+	background-image:url(static/lessons/0040-bg.png);
+	background-repeat:no-repeat;
+	background-position:left -38px;
+}
+
+#lesson40 .row { margin-top:0; }
+
+#lesson40 .avatar {
+	position:absolute;
+}
+
+#lesson40 .avatar.woman-sue {
+	top:191px; left:75px;
+}
+#lesson40 .avatar.man-sam {
+	top:191px; left:75px;
+}
+
+#lesson40 .lesson-body .pop-msg {
+	width:725px;
+	right:40px; top:131px;
+}
+
+#lesson40 div.cards40 {
+	text-align:center;
+}
+#lesson40 div.cards40 p {
+	text-align:left;
+}
+
+#lesson40 div.card {
+	display:inline-block;
+	position:relative;
+	width:220px;
+	vertical-align:top;
+	text-align:center;
+}
+
+#lesson40 div.card img.card {
+	width:86px;
+}
+
+#lesson40 div.card img.check,
+#lesson40 div.card img.partial {
+	display:block;
+	position:absolute;
+	top:102px; left:55px;
+	width:28px; height:28px;
+}
+
+#lesson40 div.card span {
+	display:inline-block;
+	width:100px;
+	text-align:left;
+	padding-left:0;
+	font-size:14px;
+	line-height:19px;
+	vertical-align:top;
+	margin-top:20px;
+	margin-left:8px;
+}
+
+#lesson40 div.card2 {
+	display:block;
+	margin-left:18px;
+}
+
+#lesson40 div.card2 img.card {
+	display:block;
+	float:left;
+	width:86px;
+}
+
+#lesson40 div.card2 p {
+	display:block;
+	float:left;
+	width:559px;
+	font-size:14px;
+	text-align:left;
+	line-height:19px;
+	padding:23px 0 4px 9px;
+}
+
+#lesson40 div.card2 div.wrap-c-p {
+	text-align:left;
+	float:left;
+	width:551px;
+	padding:9px 0 0 9px;
+}	
+
+#lesson40 div.card2 .info-cards-points {
+	display:inline-block;
+	background-color:#f3f3f3;
+	padding:4px;
+}
+
+#lesson40 div.card2 .info-cards-points .c,
+#lesson40 div.card2 .info-cards-points .p {
+	display:inline-block;
+	font-size:14px;
+}
+#lesson40 div.card2 .info-cards-points .c { margin-right:10px; }
+
+#lesson40 div.card2 .info-cards-points .c span,
+#lesson40 div.card2 .info-cards-points .p span {
+	display:inline-block;
+	border:1px solid rgb(202,202,202);
+	font-size:14px;
+	line-height:16px;
+	padding:2px 8px;
+	width:55px;
+}
+</style>
+<div class="lesson lesson40" id="lesson40">
+<div class="lesson-body">
+<h1 class="upper">Sicherheit Mitarbeitersensibilisierungs-Kurs</h1>
+
+<h2>EINLEITUNG</h2>
+
+<div class="avatar woman-sue"><img src="static/lessons/0040-woman.png" /></div>
+
+<div class="avatar man-sam"><img src="static/lessons/0040-man.png" /></div>
+
+<div class="pop-msg">
+<div class="row">
+<div class="col-md-12">
+<div class="cards40">
+<p><strong>Lernkarte</strong></p>
+
+<p><span class="woman-sue">Susan</span> <span class="man-sam">John</span> erkl&auml;rt, dass du in den einzelnen Kapiteln sogennante Lernkarten findest. Bitte klicke auf die Lernkarte, um den Inhalt anzuzeigen. Nach Abschluss einer Lernkarte erh&auml;lst du Punkte. Die Lernkarten sehen so aus:</p>
+
+<div class="card"><img class="card" src="static/lessons/card0.png" /> <img class="partial" src="static/lessons/card-progress.png" /> <span>Teilweise abgeschlossene Lernkarte</span></div>
+
+<div class="card"><img class="card" src="static/lessons/card0.png" /> <img class="check" src="static/lessons/card-check.png" /> <span>Abgeschlossene Lernkarte</span></div>
+
+<div class="card"><img class="card" src="static/lessons/card0.png" /> <span>Lernkarte nicht gelesen</span></div>
+
+<div class="clear"></div>
+
+<p><br />
+<strong>HERAUSFORDERUNGEN</strong></p>
+
+<div class="card2"><img class="card" src="static/lessons/card-exam.png" />
+<p>Der Kurs wird von kurzen Tests begleitet. Mit diesen Tests kannst du auch Punkte sammeln, die in der rechten oberen Ecke angezeigt werden.</p>
+
+<div class="wrap-c-p">
+<div class="info-cards-points">
+<div class="c">Karten <span>0</span></div>
+
+<div class="p">Punkte <span>0</span></div>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bot-buttons"><button class="b-xx-next right" onclick="Lesson40.next(1)">WEITER</button><button class="b-xx-prev right" onclick="Lesson40.back(0)">ZUR&Uuml;CK</button>
+
+<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>

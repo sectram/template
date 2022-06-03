@@ -1,0 +1,174 @@
+/** Slide **/
+.carousel {
+    position: relative;
+	margin-top:280px;
+}
+
+.carousel .slides {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* slide item */
+.slideItem .reflection,
+.slideItem .gradient {
+    display: none;
+}
+
+.carousel .slides .slideItem {
+    position: relative;
+	height:370px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: none;
+	outline:none;
+}
+
+.carousel .slides .slideItem a {
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: zoom-in;
+}
+
+.carousel .slides .slideItem img {
+    margin: auto;
+    padding: 0;
+    border: none;
+    width: auto;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carousel .nextButton {
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    cursor: pointer;
+    z-index: 1;
+	width:10px;height:10px;
+	background:transparent;
+}
+
+.carousel .nextButton:after {
+    position: absolute;
+    font-size: 90px;
+    content: "\f105";
+    right: 10px;
+    font-family: 'FontAwesome';
+    color: #65b8c0;
+    -moz-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.carousel .prevButton {
+    position: absolute;
+    left: 90px;
+    top: 50%;
+    cursor: pointer;
+    z-index: 1;
+	width:10px;height:10px;
+	background:transparent;
+}
+
+.carousel .prevButton:after {
+    position: absolute;
+    font-size: 90px;
+    content: "\f104";
+    left: 10px;
+    font-family: 'FontAwesome';
+    color: #65b8c0;
+    -moz-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.carousel .nextButton:hover:after,
+.carousel .prevButton:hover:after {
+    color: #00c2d4;
+}
+
+.carousel .buttonNav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.carousel .slick-prev {
+	left:10px;
+}
+
+.carousel .slick-next {
+	right:10px;
+}
+
+.carousel .slick-prev,
+.carousel .slick-next {
+	z-index:10;
+}
+
+.carousel .slick-prev:before,
+.carousel .slick-next:before {
+	opacity:1;
+}
+
+/* bullets */
+.carousel .buttonNav .bullet {
+    position: relative;
+    float: left;
+    width: 36px;
+    height: 5px;
+    margin: 0 8px;
+    cursor: pointer;
+    background: #c4cbcf;
+}
+
+.carousel .buttonNav .bullet:hover,
+.carousel .buttonNav .bulletActive {
+    background: #00c2d4;
+}
+
+.carousel .slick-slide {
+	transform:scale(0.85);
+	opacity:0.9;
+	transition:all ease 0.5s;
+}
+
+.carousel .slick-slide .ava-check {
+	opacity:0;
+}
+
+.carousel .slick-slide.slick-current {
+	transform:scale(1);
+	opacity:1;
+}
+
+.carousel .slick-slide.slick-current .ava-check {
+	opacity: 1;
+}
+
+.carousel .slick-list {
+	margin:0 -5px;
+}
+
+.carousel .slick-slide > div {
+	padding:0 5px;
+}
+
+.carousel .item-inner {
+	text-align:center;
+}

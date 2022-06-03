@@ -1,0 +1,438 @@
+<html data-lt-installed="true">
+  <head>
+    <title></title>
+  </head>
+  <body
+    data-gr-ext-installed=""
+    data-new-gr-c-s-check-loaded="14.1002.0"
+    data-new-gr-c-s-loaded="14.1002.0"
+  >
+    <style type="text/css">
+      #lesson20 {
+        display: none;
+      }
+
+      #lesson20 .lesson-body {
+        padding: 67px;
+      }
+
+      #lesson20 .welcome {
+        position: relative;
+        padding-top: 176px;
+        padding-left: 132px;
+      }
+
+      #lesson20 .lesson-body h1 {
+        padding: 17px 0 28px 0;
+      }
+
+      #lesson20 p {
+        line-height: 28px;
+      }
+
+      #lesson20 img.it-logo {
+        display: block;
+        position: absolute;
+        top: 210px;
+        left: 12px;
+        width: 234px;
+      }
+    </style>
+    <div class="lesson lesson20" id="lesson20">
+      <div class="lesson-body"></div>
+
+      <div class="bot-buttons">
+        <button class="b-xx-next right" onclick="Lesson30.next(0)">NEXT</button>
+        <button
+          class="b-xx-prev right"
+          onclick="javascript:window.location.reload()"
+        >
+          BACK
+        </button>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+    <style type="text/css">
+      #lesson30 {
+        display: none;
+      }
+      #lesson30 .lesson-body {
+        /* background-image: url(static/lessons/0030-bg.png); */
+        background-repeat: no-repeat;
+        background-position: left top;
+      }
+
+      #lesson30 .avatar {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: left top;
+        margin-left: 0;
+      }
+
+      #lesson30 .avatar .ava-check {
+        position: relative;
+      }
+
+      #lesson30 .man-sam,
+      #lesson30 .man-ar,
+      #lesson30 .man-in,
+      #lesson30 .man-af,
+      #lesson30 .man-as,
+      #lesson30 .woman-sue,
+      #lesson30 .woman-ar,
+      #lesson30 .woman-in,
+      #lesson30 .woman-af,
+      #lesson30 .woman-as {
+        transition: width 0.8s, height 0.8s;
+      }
+
+      #lesson30 .man-sam,
+      #lesson30 .man-ar,
+      #lesson30 .man-in,
+      #lesson30 .man-af,
+      #lesson30 .man-as {
+        /*top:0px; left:134px;*/
+        background-size: contain;
+        width: 161px;
+        height: 320px;
+      }
+
+      #lesson30 .ava-check {
+        width: 115px;
+        margin: auto;
+      }
+
+      #lesson30 .man-sam .ava-check,
+      #lesson30 .man-ar .ava-check,
+      #lesson30 .man-in .ava-check,
+      #lesson30 .man-af .ava-check,
+      #lesson30 .man-as .ava-check {
+        top: 0px;
+        right: 0px;
+        padding: 8px 32px 8px 10px;
+        background-color: #676767;
+        border-radius: 10px;
+        margin-bottom: 5px;
+      }
+      #lesson30 .man-sam .ava-check:after,
+      #lesson30 .man-ar .ava-check:after,
+      #lesson30 .man-in .ava-check:after,
+      #lesson30 .man-af .ava-check:after,
+      #lesson30 .man-as .ava-check:after {
+        display: block;
+        content: "";
+        position: absolute;
+        background-color: #676767;
+        background-image: url(static/lessons/avatar-check.png);
+        background-repeat: no-repeat;
+        background-position: 0 -20px;
+        width: 20px;
+        height: 20px;
+        top: 9px;
+        right: 7px;
+      }
+      #lesson30 .man-sam.unselected .ava-check,
+      #lesson30 .man-ar.unselected .ava-check,
+      #lesson30 .man-in.unselected .ava-check,
+      #lesson30 .man-af.unselected .ava-check,
+      #lesson30 .man-as.unselected .ava-check {
+        right: 21px;
+      }
+
+      #lesson30 .man-sam.selected .ava-check:after,
+      #lesson30 .man-ar.selected .ava-check:after,
+      #lesson30 .man-in.selected .ava-check:after,
+      #lesson30 .man-af.selected .ava-check:after,
+      #lesson30 .man-as.selected .ava-check:after {
+        background-position: 0 0;
+      }
+
+      #lesson30 .man-sam .ava-check .txt,
+      #lesson30 .man-ar .ava-check .txt,
+      #lesson30 .man-in .ava-check .txt,
+      #lesson30 .man-af .ava-check .txt,
+      #lesson30 .man-as .ava-check .txt {
+        color: #fff;
+      }
+
+      #lesson30 .woman-sue,
+      #lesson30 .woman-ar,
+      #lesson30 .woman-in,
+      #lesson30 .woman-af,
+      #lesson30 .woman-as {
+        background-size: contain;
+        width: 111px;
+        height: 321px;
+      }
+
+      #lesson30 .woman-sue .ava-check,
+      #lesson30 .woman-ar .ava-check,
+      #lesson30 .woman-in .ava-check,
+      #lesson30 .woman-af .ava-check,
+      #lesson30 .woman-as .ava-check {
+        padding: 8px 10px 8px 32px;
+        background-color: #676767;
+        border-radius: 10px;
+        transition: left 0.8s;
+        margin-bottom: 5px;
+      }
+
+      #lesson30 .woman-sue .ava-check:after,
+      #lesson30 .woman-ar .ava-check:after,
+      #lesson30 .woman-in .ava-check:after,
+      #lesson30 .woman-af .ava-check:after,
+      #lesson30 .woman-as .ava-check:after {
+        display: block;
+        content: "";
+        position: absolute;
+        background-color: #676767;
+        background-image: url(static/lessons/avatar-check.png);
+        background-repeat: no-repeat;
+        background-position: 0 -20px;
+        width: 20px;
+        height: 20px;
+        top: 9px;
+        left: 7px;
+      }
+
+      #lesson30 .woman-sue.selected .ava-check:after,
+      #lesson30 .woman-ar.selected .ava-check:after,
+      #lesson30 .woman-in.selected .ava-check:after,
+      #lesson30 .woman-af.selected .ava-check:after,
+      #lesson30 .woman-as.selected .ava-check:after {
+        background-position: 0 0;
+      }
+
+      #lesson30 .woman-sue .ava-check .txt,
+      #lesson30 .woman-ar .ava-check .txt,
+      #lesson30 .woman-in .ava-check .txt,
+      #lesson30 .woman-af .ava-check .txt,
+      #lesson30 .woman-as .ava-check .txt {
+        color: #fff;
+      }
+
+      #lesson30.lesson .lesson-body .infobox {
+        position: absolute;
+      }
+
+      #lesson30.lesson .lesson-body .infobox1 {
+        top: 108px;
+        left: 348px;
+        width: 213px;
+      }
+
+      #lesson30.lesson .lesson-body .hover-man {
+        position: absolute;
+        top: 28px;
+        left: 321px;
+        width: 341px;
+      }
+      #lesson30.lesson .lesson-body .hover-woman {
+        position: absolute;
+        top: 28px;
+        left: 321px;
+        width: 341px;
+      }
+
+      #lesson30 div.carousel .txt {
+        /*width:80px;*/
+        margin: auto;
+        text-transform: uppercase;
+      }
+
+      #lesson30 button.slick-next {
+        color: #06464c;
+        background-image: url(static/img/chevron-next.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        height: 55px;
+        width: 55px;
+      }
+
+      #lesson30 button.slick-prev {
+        color: #06464c;
+        background-image: url(static/img/chevron-prev.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        height: 55px;
+        width: 55px;
+      }
+
+      #lesson30 button.slick-next:hover,
+      #lesson30 button.slick-prev:hover {
+        background-position: -55px 0;
+      }
+
+      #lesson30 button.slick-prev:before,
+      #lesson30 button.slick-next:before {
+        content: "";
+      }
+    </style>
+    <div class="lesson lesson30" id="lesson30">
+      <div class="lesson-body"></div>
+
+      <div class="bot-buttons">
+        <button class="b-xx-next right black" onclick="Lesson40.next(0)">
+          NEXT
+        </button>
+        <button class="b-xx-prev right black" onclick="Lesson30.back()">
+          BACK
+        </button>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+    <style type="text/css">
+      #lesson40 {
+        display: none;
+      }
+
+      #lesson40 .lesson-body {
+        background-repeat: no-repeat;
+        background-position: left -38px;
+      }
+
+      #lesson40 .row {
+        margin-top: 0;
+      }
+
+      #lesson40 .avatar {
+        position: absolute;
+      }
+
+      #lesson40 .avatar.woman-sue,
+      #lesson40 .avatar.woman-ar,
+      #lesson40 .avatar.woman-in,
+      #lesson40 .avatar.woman-af,
+      #lesson40 .avatar.woman-as {
+        top: 191px;
+        left: 90px;
+      }
+      #lesson40 .avatar.man-sam,
+      #lesson40 .avatar.man-ar,
+      #lesson40 .avatar.man-in,
+      #lesson40 .avatar.man-af,
+      #lesson40 .avatar.man-as {
+        top: 191px;
+        left: 75px;
+      }
+
+      #lesson40 .lesson-body .pop-msg {
+        width: 725px;
+        right: 40px;
+        top: 131px;
+      }
+
+      #lesson40 div.cards40 {
+        text-align: center;
+      }
+      #lesson40 div.cards40 p {
+        text-align: left;
+      }
+
+      #lesson40 div.card {
+        display: inline-block;
+        position: relative;
+        width: 220px;
+        vertical-align: top;
+        text-align: center;
+      }
+
+      #lesson40 div.card img.card {
+        width: 86px;
+      }
+
+      #lesson40 div.card img.check,
+      #lesson40 div.card img.partial {
+        display: block;
+        position: absolute;
+        top: 102px;
+        left: 55px;
+        width: 28px;
+        height: 28px;
+      }
+
+      #lesson40 div.card span {
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+        padding-left: 0;
+        font-size: 16px;
+        line-height: 24px;
+        vertical-align: top;
+        margin-top: 20px;
+        margin-left: 8px;
+      }
+
+      #lesson40 div.card2 {
+        display: block;
+        margin-left: 18px;
+      }
+
+      #lesson40 div.card2 img.card {
+        display: block;
+        float: left;
+        width: 86px;
+      }
+
+      #lesson40 div.card2 p {
+        display: block;
+        float: left;
+        width: 559px;
+        font-size: 16px;
+        text-align: left;
+        line-height: 24px;
+        padding: 23px 0 4px 9px;
+      }
+
+      #lesson40 div.card2 div.wrap-c-p {
+        text-align: left;
+        float: left;
+        width: 551px;
+        padding: 9px 0 0 9px;
+      }
+
+      #lesson40 div.card2 .info-cards-points {
+        display: inline-block;
+        background-color: #f3f3f3;
+        padding: 4px;
+      }
+
+      #lesson40 div.card2 .info-cards-points .c,
+      #lesson40 div.card2 .info-cards-points .p {
+        display: inline-block;
+        font-size: 16px;
+      }
+      #lesson40 div.card2 .info-cards-points .c {
+        margin-right: 10px;
+      }
+
+      #lesson40 div.card2 .info-cards-points .c span,
+      #lesson40 div.card2 .info-cards-points .p span {
+        display: inline-block;
+        border: 1px solid rgb(202, 202, 202);
+        font-size: 16px;
+        line-height: 24px;
+        padding: 2px 8px;
+        width: 55px;
+      }
+    </style>
+    <div class="lesson lesson40" id="lesson40">
+      <div class="lesson-body"></div>
+
+      <div class="bot-buttons">
+        <button class="b-xx-next right" onclick="Lesson40.next(1)">NEXT</button
+        ><button class="b-xx-prev right" onclick="Lesson40.back(0)">
+          BACK
+        </button>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+  </body>
+</html>

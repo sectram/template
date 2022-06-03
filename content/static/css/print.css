@@ -1,0 +1,174 @@
+* {
+	margin:0; padding:0;
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
+	line-height:16px;
+	color:#424242;
+}
+
+html,body {
+	height:210mm;
+	width:297mm;
+}
+
+.upper { text-transform:uppercase; }
+
+.debug-scorm, .debug-wnd,
+.course header,
+.bot-buttons,
+.body_certificate .cont-form {
+	display:none;
+}
+
+.body_certificate  .cont {
+	position:relative;
+	width:1001px;
+	height:720px;
+	margin:0 auto;
+}
+
+.body_certificate span {
+	font:inherit;
+	color:inherit;
+}
+
+.body_certificate .cont .pos-abs {
+	position: absolute;
+}
+
+.body_certificate .name {
+	top: 235px;
+	left: 0;
+	width: 520px;
+	height: 56px;
+	padding-left: 65px;
+}
+
+.body_certificate .name h4 {
+	font-size: 26px;
+	line-height: 26px;
+	text-align: left;
+}
+
+.body_certificate .course {
+	top: 280px;
+	left: 0;
+	width: 520px;
+	height: 105px;
+	padding-left: 65px;
+}
+
+.body_certificate .cert-name,
+.body_certificate .course-title {
+	position: relative;
+	display: flex;
+	align-items: left;
+	justify-content: left;
+	width: 100%;
+	height: 100%;
+}
+
+.body_certificate .result {
+	top: 409px;
+	left: 0;
+	width: 620px;
+	height: auto;
+	padding-left: 70px;
+}
+
+.body_certificate .result h5 {
+	text-align: left;
+	padding: 10px 0 0 0;
+}
+
+.body_certificate .timeDate {
+	top: 565px;
+	left: 0;
+	width: 620px;
+	height: auto;
+	padding-left: 70px;
+}
+
+.body_certificate .timeDate h6 {
+	padding: 14px 0 0;
+	text-align: left;
+}
+
+.body_certificate h1 {
+	font-weight: bold;
+	text-align: left !important;
+	font-size: 35px;
+	line-height:34px;
+  	padding-top: 20px;
+    padding-bottom: 15px;
+	/*padding-top: 0;
+	padding-bottom: 0;
+	height:44px;*/
+}
+
+.body_certificate h2, h6 {
+	font-weight: normal;
+	font-size:26px;
+	line-height:28.6px;
+	text-align: center;
+	font-style: italic;
+	padding:14px 0;
+	height:29px;
+}
+
+.body_certificate h3 {
+	font-weight: bold;
+	font-size:26px;
+	line-height:28.6px;
+	text-align: center;
+	height:29px;
+}
+
+.body_certificate h4 {
+	font-weight: normal;
+	font-size:32px;
+	line-height:35.2px;
+	height:35px;
+	text-align: center;
+	padding-bottom:20px;
+}
+
+.body_certificate h5 {
+	font-weight: normal;
+	font-size:24px;
+	line-height:26.4px;
+	height:26px;
+	text-align: center;
+	padding: 16px 0 0 0;
+}
+
+.body_certificate h5 strong {
+	font-weight: bold;
+	font-size:24px;
+	text-align: center;
+}
+.body_certificate h5 span.score {
+	font-weight:bold;
+	font-size:24px;
+}
+
+.body_certificate  .cont .bot-but {
+	display:none;
+}
+
+.body_certificate  .cont .bgimage {
+	position:absolute;
+	top:0; left:0;
+	text-align:center;
+}
+
+.body_certificate h1,
+.body_certificate h2,
+.body_certificate h3,
+.body_certificate h4,
+.body_certificate h5,
+.body_certificate h6 {
+	z-index: 9;
+}
+
+.body_certificate  .cont .bgimage img { height:710px; }
